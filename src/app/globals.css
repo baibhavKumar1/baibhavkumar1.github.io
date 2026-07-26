@@ -6,13 +6,13 @@
     --font-heading: 'Space Grotesk', var(--font-heading), sans-serif;
     --font-body: 'Poppins', var(--font-body), sans-serif;
     --font-mono: 'JetBrains Mono', var(--font-mono), monospace;
-
+    
     /* Supermemory Whitish Theme + Prussian Blue Accent */
     --background: #FFFFFF;
-    --foreground: #1447e6;
+    --foreground: #0B2545;
     --card-bg: #F8FAFC;
     --card-border: #E2E8F0;
-    --accent-prussian: #1447e6;
+    --accent-prussian: #0B2545;
     --accent-prussian-hover: #134074;
     --text-muted: #475569;
   }
@@ -21,21 +21,14 @@
     background-color: var(--background);
     color: var(--foreground);
     font-family: var(--font-body);
-    font-size: 16px;
-    /* Strict minimum 16px font floor */
+    font-size: 16px; /* Strict minimum 16px font floor */
     line-height: 1.6;
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  .font-heading {
+  h1, h2, h3, h4, h5, h6, .font-heading {
     font-family: var(--font-heading);
     letter-spacing: -0.03em;
     color: var(--foreground);
@@ -44,6 +37,19 @@
   .font-mono-custom {
     font-family: var(--font-mono);
   }
+}
+
+/* Prussian Blue Explicit Utilities */
+.text-prussian {
+  color: #0B2545 !important;
+}
+
+.bg-prussian {
+  background-color: #0B2545 !important;
+}
+
+.border-prussian {
+  border-color: #0B2545 !important;
 }
 
 /* Supermemory Minimalist Glass Header */
@@ -61,7 +67,7 @@
 }
 
 .minimal-card:hover {
-  border-color: #1447e6;
+  border-color: #0B2545;
   box-shadow: 0 10px 30px -10px rgba(11, 37, 69, 0.08);
   transform: translateY(-2px);
 }

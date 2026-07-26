@@ -23,9 +23,23 @@ if (fs.existsSync(outNext)) {
   fs.cpSync(outNext, rootNext, { recursive: true });
 }
 
-// Remove docs directory if present to keep root clean
+// Remove docs directory if present
 if (fs.existsSync(docsDir)) {
   fs.rmSync(docsDir, { recursive: true, force: true });
 }
 
-console.log("Successfully exported static build to root (/) with .nojekyll for GitHub Pages!");
+// FIX: Convert ALL absolute /_next/ asset paths to relative ./_next/ asset paths across all static HTML & JS files
+// This guarantees CSS & JS load cleanly on GitHub Pages, file://, or any subpath hosting!
+["index.html", "404.html"].forEach((file) => {
+  const filePath = path.join(rootDir, file);
+  if (fs.existsSync(filePath)) {
+    let content = fs.readFileSync(filePath, "utf8");
+    content = content.replaceAll('href="/_next/', 'href="./_next/');
+    content = content.replaceAll('src="/_next/', 'src="./_next/');
+    content = content.replaceAll('"/_next/', '"./_next/');
+    content = content.replaceAll('\\"/_next/', '\\"./_next/');
+    fs.writeFileSync(filePath, content);
+  }
+});
+
+console.log("Successfully exported static build to root (/) with fully resolved relative asset paths & .nojekyll!");

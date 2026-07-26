@@ -132,25 +132,25 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-[#1447e6] font-sans text-base selection:bg-[#1447e6] selection:text-white relative overflow-x-hidden">
+    <div className="min-h-screen bg-white text-prussian font-sans text-base selection:bg-prussian selection:text-white relative overflow-x-hidden">
       {/* Supermemory Minimalist Ultra-Wide Navigation Header */}
       <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-[1536px]">
         <nav className="minimal-nav px-10 py-5 rounded-full flex items-center justify-between shadow-sm">
-          <a href="#" className="font-heading font-bold text-xl tracking-tight text-[#1447e6] flex items-center gap-3">
+          <a href="#" className="font-heading font-bold text-xl tracking-tight text-prussian flex items-center gap-3">
             <span>Baibhav Kumar</span>
             <span className="hidden sm:inline-block text-base font-mono-custom text-[#64748B] border-l border-slate-200 pl-4">Fullstack AI Engineer</span>
           </a>
 
           <div className="hidden md:flex items-center gap-12 text-base font-mono-custom text-[#475569]">
-            <a href="#production-contributions" className="hover:text-[#1447e6] transition-colors">Production IC Work</a>
-            <a href="#independent-projects" className="hover:text-[#1447e6] transition-colors">Independent Projects</a>
-            <a href="#architecture" className="hover:text-[#1447e6] transition-colors">Topology</a>
-            <a href="#experience" className="hover:text-[#1447e6] transition-colors">Experience</a>
+            <a href="#production-contributions" className="hover:text-prussian transition-colors">Production IC Work</a>
+            <a href="#independent-projects" className="hover:text-prussian transition-colors">Independent Projects</a>
+            <a href="#architecture" className="hover:text-prussian transition-colors">Topology</a>
+            <a href="#experience" className="hover:text-prussian transition-colors">Experience</a>
           </div>
 
           <a 
             href="#contact"
-            className="px-7 py-3 bg-[#1447e6] text-white font-medium rounded-full hover:bg-[#134074] transition-all text-base font-mono-custom shadow-sm"
+            className="px-7 py-3 bg-prussian text-white font-medium rounded-full hover:bg-slate-800 transition-all text-base font-mono-custom shadow-sm"
           >
             Get in Touch
           </a>
@@ -160,12 +160,12 @@ export default function Home() {
       {/* Clean Minimalist Hero Section */}
       <section className="pt-44 pb-24 px-6 md:px-12 w-[95%] max-w-[1536px] mx-auto text-center flex flex-col items-center">
         {/* Positioning Badge */}
-        <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full border border-slate-200 bg-slate-50 text-[#1447e6] text-base font-mono-custom mb-8 shadow-sm">
+        <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full border border-slate-200 bg-slate-50 text-prussian text-base font-mono-custom mb-8 shadow-sm">
           <span>Fullstack AI Engineer · Python & TypeScript Infrastructure</span>
         </div>
 
         {/* Hero Title */}
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tight text-[#1447e6] leading-[1.06] mb-8 max-w-6xl">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tight text-prussian leading-[1.06] mb-8 max-w-6xl">
           Building Multi-Agent Systems & Scalable GenAI Infrastructure.
         </h1>
 
@@ -178,14 +178,14 @@ export default function Home() {
         <div className="flex flex-wrap items-center justify-center gap-5">
           <a 
             href="#production-contributions"
-            className="px-9 py-4 bg-[#1447e6] text-white font-semibold rounded-full hover:bg-[#134074] transition-all flex items-center gap-3 text-base shadow-sm"
+            className="px-9 py-4 bg-prussian text-white font-semibold rounded-full hover:bg-slate-800 transition-all flex items-center gap-3 text-base shadow-sm"
           >
             View Production IC Work
             <ArrowUpRight className="w-5 h-5" />
           </a>
           <a 
             href="#contact"
-            className="px-9 py-4 bg-white border border-slate-300 hover:border-[#1447e6] text-[#1447e6] font-medium rounded-full transition-all text-base font-mono-custom"
+            className="px-9 py-4 bg-white border border-slate-300 hover:border-prussian text-prussian font-medium rounded-full transition-all text-base font-mono-custom"
           >
             Contact Baibhav
           </a>
@@ -196,9 +196,9 @@ export default function Home() {
       <section id="production-contributions" className="py-24 px-6 md:px-12 w-[95%] max-w-[1536px] mx-auto border-t border-slate-200">
         <div className="mb-14">
           <span className="text-base font-mono-custom text-[#64748B] uppercase tracking-widest flex items-center gap-2 mb-2">
-            <UserCheck className="w-4 h-4 text-[#1447e6]" /> Primary Production Work (Individual Contributor)
+            <UserCheck className="w-4 h-4 text-prussian" /> Primary Production Work (Individual Contributor)
           </span>
-          <h2 className="text-4xl md:text-6xl font-heading font-bold text-[#1447e6] tracking-tight">Enterprise Production Systems</h2>
+          <h2 className="text-4xl md:text-6xl font-heading font-bold text-prussian tracking-tight">Enterprise Production Systems</h2>
           <p className="text-[#475569] text-xl font-light mt-3 max-w-3xl">
             Core production systems built as an individual contributor in cross-functional engineering teams.
           </p>
@@ -219,7 +219,7 @@ export default function Home() {
                   <span className="text-base font-mono-custom px-3.5 py-1 bg-slate-100 border border-slate-200 rounded-full text-[#475569]">
                     {project.roleBadge}
                   </span>
-                  <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-[#1447e6] hover:bg-[#1447e6] hover:text-white transition-all">
+                  <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-prussian hover:bg-prussian hover:text-white transition-all">
                     <Maximize2 className="w-4 h-4" />
                   </div>
                 </div>
@@ -229,7 +229,7 @@ export default function Home() {
                     {project.diagram}
                   </div>
                   <div className="md:col-span-7">
-                    <h3 className="text-2xl md:text-3xl font-heading font-bold text-[#1447e6] mb-2 hover:underline">
+                    <h3 className="text-2xl md:text-3xl font-heading font-bold text-prussian mb-2 hover:underline">
                       {project.title}
                     </h3>
                     <p className="text-base font-mono-custom text-[#64748B] mb-3">{project.subtitle}</p>
@@ -243,10 +243,10 @@ export default function Home() {
               <div>
                 <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 mb-5 flex items-center justify-between">
                   <div>
-                    <div className="text-2xl font-heading font-bold text-[#1447e6]">{project.stat}</div>
+                    <div className="text-2xl font-heading font-bold text-prussian">{project.stat}</div>
                     <div className="text-base text-[#64748B] font-mono-custom">{project.statLabel}</div>
                   </div>
-                  <span className="text-base font-mono-custom text-[#1447e6] flex items-center gap-1.5">
+                  <span className="text-base font-mono-custom text-prussian flex items-center gap-1.5">
                     <CheckCircle2 className="w-4 h-4" /> Production Deployed
                   </span>
                 </div>
@@ -268,9 +268,9 @@ export default function Home() {
       <section id="independent-projects" className="py-24 px-6 md:px-12 w-[95%] max-w-[1536px] mx-auto border-t border-slate-200">
         <div className="mb-14">
           <span className="text-base font-mono-custom text-[#64748B] uppercase tracking-widest flex items-center gap-2 mb-2">
-            <Code2 className="w-4 h-4 text-[#1447e6]" /> Specialized Implementations
+            <Code2 className="w-4 h-4 text-prussian" /> Specialized Implementations
           </span>
-          <h2 className="text-4xl md:text-6xl font-heading font-bold text-[#1447e6] tracking-tight">Independent Projects & Data Pipelines</h2>
+          <h2 className="text-4xl md:text-6xl font-heading font-bold text-prussian tracking-tight">Independent Projects & Data Pipelines</h2>
           <p className="text-[#475569] text-xl font-light mt-3 max-w-3xl">
             Custom telemetry gateways, PySpark ETL pipelines, and specialized AI developer tools.
           </p>
@@ -291,7 +291,7 @@ export default function Home() {
                   <span className="text-base font-mono-custom px-3.5 py-1 bg-slate-100 border border-slate-200 rounded-full text-[#475569]">
                     {project.roleBadge}
                   </span>
-                  <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-[#1447e6] hover:bg-[#1447e6] hover:text-white transition-all">
+                  <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-prussian hover:bg-prussian hover:text-white transition-all">
                     <Maximize2 className="w-4 h-4" />
                   </div>
                 </div>
@@ -301,7 +301,7 @@ export default function Home() {
                     {project.diagram}
                   </div>
                   <div className="md:col-span-7">
-                    <h3 className="text-2xl md:text-3xl font-heading font-bold text-[#1447e6] mb-2 hover:underline">
+                    <h3 className="text-2xl md:text-3xl font-heading font-bold text-prussian mb-2 hover:underline">
                       {project.title}
                     </h3>
                     <p className="text-base font-mono-custom text-[#64748B] mb-3">{project.subtitle}</p>
@@ -315,10 +315,10 @@ export default function Home() {
               <div>
                 <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 mb-5 flex items-center justify-between">
                   <div>
-                    <div className="text-2xl font-heading font-bold text-[#1447e6]">{project.stat}</div>
+                    <div className="text-2xl font-heading font-bold text-prussian">{project.stat}</div>
                     <div className="text-base text-[#64748B] font-mono-custom">{project.statLabel}</div>
                   </div>
-                  <span className="text-base font-mono-custom text-[#1447e6] flex items-center gap-1.5">
+                  <span className="text-base font-mono-custom text-prussian flex items-center gap-1.5">
                     <CheckCircle2 className="w-4 h-4" /> Verified Benchmark
                   </span>
                 </div>
@@ -355,16 +355,16 @@ export default function Home() {
             >
               <button
                 onClick={() => setActiveProject(null)}
-                className="absolute top-6 right-6 w-10 h-10 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-[#1447e6] hover:bg-slate-200 transition-all"
+                className="absolute top-6 right-6 w-10 h-10 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-prussian hover:bg-slate-200 transition-all"
               >
                 <X className="w-5 h-5" />
               </button>
 
               <div className="mb-6 pr-12">
-                <span className="text-base font-mono-custom px-4 py-1.5 bg-slate-100 border border-slate-200 rounded-full text-[#1447e6] font-semibold mb-3 inline-block">
+                <span className="text-base font-mono-custom px-4 py-1.5 bg-slate-100 border border-slate-200 rounded-full text-prussian font-semibold mb-3 inline-block">
                   ENGINEERING DESIGN DOC · {activeProject.category}
                 </span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold text-[#1447e6] mb-2">
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-prussian mb-2">
                   {activeProject.title}
                 </h2>
                 <p className="text-base font-mono-custom text-[#64748B]">{activeProject.subtitle}</p>
@@ -375,7 +375,7 @@ export default function Home() {
                 <button
                   onClick={() => setActiveEddTab("overview")}
                   className={`px-5 py-2 rounded-xl text-base font-mono-custom transition-all ${
-                    activeEddTab === "overview" ? "bg-[#1447e6] text-white font-bold" : "text-[#64748B] hover:text-[#1447e6]"
+                    activeEddTab === "overview" ? "bg-prussian text-white font-bold" : "text-[#64748B] hover:text-prussian"
                   }`}
                 >
                   Overview & Problem
@@ -383,7 +383,7 @@ export default function Home() {
                 <button
                   onClick={() => setActiveEddTab("architecture")}
                   className={`px-5 py-2 rounded-xl text-base font-mono-custom transition-all ${
-                    activeEddTab === "architecture" ? "bg-[#1447e6] text-white font-bold" : "text-[#64748B] hover:text-[#1447e6]"
+                    activeEddTab === "architecture" ? "bg-prussian text-white font-bold" : "text-[#64748B] hover:text-prussian"
                   }`}
                 >
                   Architecture
@@ -391,7 +391,7 @@ export default function Home() {
                 <button
                   onClick={() => setActiveEddTab("tradeoffs")}
                   className={`px-5 py-2 rounded-xl text-base font-mono-custom transition-all ${
-                    activeEddTab === "tradeoffs" ? "bg-[#1447e6] text-white font-bold" : "text-[#64748B] hover:text-[#1447e6]"
+                    activeEddTab === "tradeoffs" ? "bg-prussian text-white font-bold" : "text-[#64748B] hover:text-prussian"
                   }`}
                 >
                   Trade-offs
@@ -399,7 +399,7 @@ export default function Home() {
                 <button
                   onClick={() => setActiveEddTab("metrics")}
                   className={`px-5 py-2 rounded-xl text-base font-mono-custom transition-all ${
-                    activeEddTab === "metrics" ? "bg-[#1447e6] text-white font-bold" : "text-[#64748B] hover:text-[#1447e6]"
+                    activeEddTab === "metrics" ? "bg-prussian text-white font-bold" : "text-[#64748B] hover:text-prussian"
                   }`}
                 >
                   Metrics
@@ -409,11 +409,11 @@ export default function Home() {
               {activeEddTab === "overview" && (
                 <div className="space-y-6 text-[#475569] leading-relaxed">
                   <div>
-                    <h4 className="text-[#1447e6] font-heading font-semibold text-xl mb-2">The Problem</h4>
+                    <h4 className="text-prussian font-heading font-semibold text-xl mb-2">The Problem</h4>
                     <p className="text-base font-light">{activeProject.problem}</p>
                   </div>
                   <div>
-                    <h4 className="text-[#1447e6] font-heading font-semibold text-xl mb-2">The Architecture</h4>
+                    <h4 className="text-prussian font-heading font-semibold text-xl mb-2">The Architecture</h4>
                     <p className="text-base font-light">{activeProject.architecture}</p>
                   </div>
                 </div>
@@ -421,7 +421,7 @@ export default function Home() {
 
               {activeEddTab === "architecture" && (
                 <div className="bg-slate-50 border border-slate-200 p-6 rounded-2xl">
-                  <p className="text-base font-mono-custom text-[#1447e6] leading-relaxed">
+                  <p className="text-base font-mono-custom text-prussian leading-relaxed">
                     {activeProject.architecture}
                   </p>
                 </div>
@@ -432,8 +432,8 @@ export default function Home() {
                   {activeProject.tradeoffs.map((item: any, idx: number) => (
                     <div key={idx} className="bg-slate-50 border border-slate-200 p-6 rounded-2xl">
                       <div className="flex items-center justify-between mb-2">
-                        <span className="text-lg font-heading font-bold text-[#1447e6]">{item.topic}</span>
-                        <span className="text-base font-mono-custom text-[#1447e6] bg-white px-3 py-1 rounded-full border border-slate-300">
+                        <span className="text-lg font-heading font-bold text-prussian">{item.topic}</span>
+                        <span className="text-base font-mono-custom text-prussian bg-white px-3 py-1 rounded-full border border-slate-300">
                           Selected: {item.choice}
                         </span>
                       </div>
@@ -449,7 +449,7 @@ export default function Home() {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   {activeProject.metrics.map((m: any, idx: number) => (
                     <div key={idx} className="bg-slate-50 border border-slate-200 p-6 rounded-2xl text-center">
-                      <div className="text-3xl font-heading font-bold text-[#1447e6] mb-1">{m.value}</div>
+                      <div className="text-3xl font-heading font-bold text-prussian mb-1">{m.value}</div>
                       <div className="text-base text-[#64748B] font-mono-custom">{m.label}</div>
                     </div>
                   ))}
@@ -464,19 +464,19 @@ export default function Home() {
       <section id="architecture" className="py-24 px-6 md:px-12 w-[95%] max-w-[1536px] mx-auto border-t border-slate-200">
         <div className="mb-12">
           <span className="text-base font-mono-custom text-[#64748B] uppercase tracking-widest block mb-2">System Stack</span>
-          <h2 className="text-4xl md:text-6xl font-heading font-bold text-[#1447e6] tracking-tight">Fullstack AI Topology</h2>
+          <h2 className="text-4xl md:text-6xl font-heading font-bold text-prussian tracking-tight">Fullstack AI Topology</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
           <div className="bg-[#F8FAFC] border border-slate-200 rounded-2xl p-7 flex flex-col justify-between">
             <div>
               <span className="text-base font-mono-custom text-[#64748B] block mb-2">Layer 01 — Orchestration</span>
-              <h3 className="text-2xl font-heading font-bold text-[#1447e6] mb-3">LangGraph Multi-Agent DAG</h3>
+              <h3 className="text-2xl font-heading font-bold text-prussian mb-3">LangGraph Multi-Agent DAG</h3>
               <p className="text-[#475569] text-base leading-relaxed font-light mb-6">
                 Stateful asynchronous workflow breakdown with Redis state checkpoints and human-in-the-loop intervention gates.
               </p>
             </div>
-            <span className="text-base font-mono-custom text-[#1447e6] bg-white px-4 py-2 rounded-xl border border-slate-300 self-start">
+            <span className="text-base font-mono-custom text-prussian bg-white px-4 py-2 rounded-xl border border-slate-300 self-start">
               Python / LangGraph / Redis
             </span>
           </div>
@@ -484,12 +484,12 @@ export default function Home() {
           <div className="bg-[#F8FAFC] border border-slate-200 rounded-2xl p-7 flex flex-col justify-between">
             <div>
               <span className="text-base font-mono-custom text-[#64748B] block mb-2">Layer 02 — Knowledge Engine</span>
-              <h3 className="text-2xl font-heading font-bold text-[#1447e6] mb-3">PostgreSQL pgvector Hybrid RAG</h3>
+              <h3 className="text-2xl font-heading font-bold text-prussian mb-3">PostgreSQL pgvector Hybrid RAG</h3>
               <p className="text-[#475569] text-base leading-relaxed font-light mb-6">
                 Multi-tenant dense HNSW vector embeddings combined with BM25 sparse search and Cohere cross-encoder reranking.
               </p>
             </div>
-            <span className="text-base font-mono-custom text-[#1447e6] bg-white px-4 py-2 rounded-xl border border-slate-300 self-start">
+            <span className="text-base font-mono-custom text-prussian bg-white px-4 py-2 rounded-xl border border-slate-300 self-start">
               Python / pgvector / LlamaIndex
             </span>
           </div>
@@ -497,12 +497,12 @@ export default function Home() {
           <div className="bg-[#F8FAFC] border border-slate-200 rounded-2xl p-7 flex flex-col justify-between">
             <div>
               <span className="text-base font-mono-custom text-[#64748B] block mb-2">Layer 03 — Telemetry & Guardrails</span>
-              <h3 className="text-2xl font-heading font-bold text-[#1447e6] mb-3">Python AsyncIO Proxy Gateway</h3>
+              <h3 className="text-2xl font-heading font-bold text-prussian mb-3">Python AsyncIO Proxy Gateway</h3>
               <p className="text-[#475569] text-base leading-relaxed font-light mb-6">
                 High-throughput Python AsyncIO reverse proxy delivering sub-6ms PII regex scrubbing, token cost budgeting, and Langfuse tracing.
               </p>
             </div>
-            <span className="text-base font-mono-custom text-[#1447e6] bg-white px-4 py-2 rounded-xl border border-slate-300 self-start">
+            <span className="text-base font-mono-custom text-prussian bg-white px-4 py-2 rounded-xl border border-slate-300 self-start">
               Python AsyncIO / Pydantic V2
             </span>
           </div>
@@ -510,12 +510,12 @@ export default function Home() {
           <div className="bg-[#F8FAFC] border border-slate-200 rounded-2xl p-7 flex flex-col justify-between">
             <div>
               <span className="text-base font-mono-custom text-[#64748B] block mb-2">Layer 04 — Data Pipelines</span>
-              <h3 className="text-2xl font-heading font-bold text-[#1447e6] mb-3">PySpark & DuckDB Feature Store</h3>
+              <h3 className="text-2xl font-heading font-bold text-prussian mb-3">PySpark & DuckDB Feature Store</h3>
               <p className="text-[#475569] text-base leading-relaxed font-light mb-6">
                 High-throughput PySpark batch processing combined with DuckDB zero-copy in-memory querying for feature extraction.
               </p>
             </div>
-            <span className="text-base font-mono-custom text-[#1447e6] bg-white px-4 py-2 rounded-xl border border-slate-300 self-start">
+            <span className="text-base font-mono-custom text-prussian bg-white px-4 py-2 rounded-xl border border-slate-300 self-start">
               PySpark / DuckDB / Parquet
             </span>
           </div>
@@ -525,17 +525,17 @@ export default function Home() {
       {/* 8XL Work Experience Section */}
       <section id="experience" className="py-24 px-6 md:px-12 w-[95%] max-w-[1536px] mx-auto border-t border-slate-200">
         <span className="text-base font-mono-custom text-[#64748B] uppercase tracking-widest block mb-2">Career History</span>
-        <h2 className="text-4xl md:text-6xl font-heading font-bold text-[#1447e6] tracking-tight mb-12">Work Experience</h2>
+        <h2 className="text-4xl md:text-6xl font-heading font-bold text-prussian tracking-tight mb-12">Work Experience</h2>
 
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
           <div className="bg-[#F8FAFC] border border-slate-200 rounded-3xl p-8 flex flex-col justify-between">
             <div>
               <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
                 <div>
-                  <h3 className="text-2xl font-heading font-bold text-[#1447e6]">Fullstack AI Engineer</h3>
+                  <h3 className="text-2xl font-heading font-bold text-prussian">Fullstack AI Engineer</h3>
                   <p className="text-base font-mono-custom text-[#64748B]">NeuralScale Labs · Full-time</p>
                 </div>
-                <span className="text-base font-mono-custom text-[#1447e6] bg-white px-4 py-1.5 rounded-full border border-slate-300">2024 — Present</span>
+                <span className="text-base font-mono-custom text-prussian bg-white px-4 py-1.5 rounded-full border border-slate-300">2024 — Present</span>
               </div>
               <p className="text-[#475569] text-lg font-light leading-relaxed mb-6">
                 Engineered multi-agent LangGraph workflow pipelines, PostgreSQL pgvector hybrid retrieval engines, and Next.js TypeScript web applications.
@@ -551,10 +551,10 @@ export default function Home() {
             <div>
               <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
                 <div>
-                  <h3 className="text-2xl font-heading font-bold text-[#1447e6]">Software Engineer</h3>
+                  <h3 className="text-2xl font-heading font-bold text-prussian">Software Engineer</h3>
                   <p className="text-base font-mono-custom text-[#64748B]">Apex Global Tech · Full-time</p>
                 </div>
-                <span className="text-base font-mono-custom text-[#1447e6] bg-white px-4 py-1.5 rounded-full border border-slate-300">2023 — 2024</span>
+                <span className="text-base font-mono-custom text-prussian bg-white px-4 py-1.5 rounded-full border border-slate-300">2023 — 2024</span>
               </div>
               <p className="text-[#475569] text-lg font-light leading-relaxed mb-6">
                 Developed high-concurrency Python FastAPI microservices, PostgreSQL databases, and React/Next.js frontend user interfaces.
@@ -571,7 +571,7 @@ export default function Home() {
       {/* 8XL Footer */}
       <footer id="contact" className="py-24 px-6 w-[95%] max-w-[1536px] mx-auto border-t border-slate-200 text-center">
         <div className="bg-[#F8FAFC] border border-slate-200 rounded-[36px] p-12 md:p-16 shadow-sm">
-          <h2 className="text-4xl md:text-6xl font-heading font-bold text-[#1447e6] tracking-tight mb-6">
+          <h2 className="text-4xl md:text-6xl font-heading font-bold text-prussian tracking-tight mb-6">
             Let’s build high-impact AI systems together.
           </h2>
           <p className="text-[#475569] text-xl max-w-2xl mx-auto font-light mb-10 leading-relaxed">
@@ -581,7 +581,7 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
             <a 
               href="mailto:baibhavkumar.work@gmail.com"
-              className="px-8 py-4 bg-[#1447e6] text-white font-semibold rounded-full hover:bg-[#134074] transition-all flex items-center gap-3 text-base shadow-sm"
+              className="px-8 py-4 bg-prussian text-white font-semibold rounded-full hover:bg-slate-800 transition-all flex items-center gap-3 text-base shadow-sm"
             >
               baibhavkumar.work@gmail.com
               <ArrowUpRight className="w-5 h-5" />
@@ -593,18 +593,18 @@ export default function Home() {
                 setCopiedEmail(true);
                 setTimeout(() => setCopiedEmail(false), 2000);
               }}
-              className="px-6 py-4 bg-white border border-slate-300 hover:border-[#1447e6] text-[#1447e6] rounded-full transition-all text-base font-mono-custom flex items-center gap-2"
+              className="px-6 py-4 bg-white border border-slate-300 hover:border-prussian text-prussian rounded-full transition-all text-base font-mono-custom flex items-center gap-2"
             >
-              {copiedEmail ? <Check className="w-5 h-5 text-emerald-600" /> : <Copy className="w-5 h-5 text-[#1447e6]" />}
+              {copiedEmail ? <Check className="w-5 h-5 text-emerald-600" /> : <Copy className="w-5 h-5 text-prussian" />}
               <span>{copiedEmail ? "Copied!" : "Copy Email"}</span>
             </button>
           </div>
 
           <div className="flex items-center justify-center gap-8 text-[#475569]">
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-[#1447e6] transition-colors p-2" aria-label="GitHub">
+            <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-prussian transition-colors p-2" aria-label="GitHub">
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-[#1447e6] transition-colors p-2" aria-label="LinkedIn">
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-prussian transition-colors p-2" aria-label="LinkedIn">
               <Linkedin className="w-6 h-6" />
             </a>
           </div>
