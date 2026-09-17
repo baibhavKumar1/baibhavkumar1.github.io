@@ -1,37 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 @import "tailwindcss";
 
 @layer base {
   :root {
-    --font-heading: 'Space Grotesk', var(--font-heading), sans-serif;
-    --font-body: 'Poppins', var(--font-body), sans-serif;
-    --font-mono: 'JetBrains Mono', var(--font-mono), monospace;
-    
-    /* Supermemory Whitish Theme + Prussian Blue Accent */
-    --background: #FFFFFF;
-    --foreground: #0B2545;
-    --card-bg: #F8FAFC;
-    --card-border: #E2E8F0;
-    --accent-prussian: #0B2545;
-    --accent-prussian-hover: #134074;
-    --text-muted: #475569;
+    --font-serif: 'Fraunces', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    /* Warm Tactile Editorial Studio Token System */
+    --bg-canvas: #FAF8F5;
+    --bg-surface: #F3EFEA;
+    --bg-card: #FFFFFF;
+    --border-warm: #E6E1DA;
+    --border-highlight: #D8D2C7;
+
+    --text-primary: #1C1917;
+    --text-muted: #78716C;
+    --text-tertiary: #A8A29E;
+
+    --accent-amber: #D97706;
+    --accent-amber-hover: #B45309;
+    --accent-terracotta: #C2410C;
+    --accent-emerald: #059669;
   }
 
   body {
-    background-color: var(--background);
-    color: var(--foreground);
-    font-family: var(--font-body);
-    font-size: 16px; /* Strict minimum 16px font floor */
-    line-height: 1.6;
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.65;
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
   }
 
-  h1, h2, h3, h4, h5, h6, .font-heading {
-    font-family: var(--font-heading);
-    letter-spacing: -0.03em;
-    color: var(--foreground);
+  h1, h2, h3, .font-serif-custom {
+    font-family: var(--font-serif);
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
   }
 
   .font-mono-custom {
@@ -39,35 +46,49 @@
   }
 }
 
-/* Prussian Blue Explicit Utilities */
-.text-prussian {
-  color: #0B2545 !important;
+/* Warm Glass Navigation Bar */
+.warm-nav {
+  background-color: rgba(250, 248, 245, 0.88);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-warm);
 }
 
-.bg-prussian {
-  background-color: #0B2545 !important;
+/* Tactile Soft Editorial Card */
+.warm-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-warm);
+  box-shadow: 0 2px 8px -2px rgba(28, 25, 23, 0.04), 0 12px 24px -6px rgba(28, 25, 23, 0.03);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.border-prussian {
-  border-color: #0B2545 !important;
-}
-
-/* Supermemory Minimalist Glass Header */
-.minimal-nav {
-  background-color: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  border: 1px solid #E2E8F0;
-}
-
-/* Card Hover Effects */
-.minimal-card {
-  background-color: #F8FAFC;
-  border: 1px solid #E2E8F0;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
-}
-
-.minimal-card:hover {
-  border-color: #0B2545;
-  box-shadow: 0 10px 30px -10px rgba(11, 37, 69, 0.08);
+.warm-card:hover {
+  border-color: var(--border-highlight);
+  box-shadow: 0 4px 16px -2px rgba(217, 119, 6, 0.08), 0 16px 32px -8px rgba(28, 25, 23, 0.06);
   transform: translateY(-2px);
+}
+
+/* Interactive Field Note Container */
+.field-note-box {
+  background-color: #F5F2EC;
+  border: 1px solid #E6E1DA;
+  border-radius: 16px;
+}
+
+/* Custom Scrollbar for Warm Aesthetics */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D6CEC4;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B5A898;
 }

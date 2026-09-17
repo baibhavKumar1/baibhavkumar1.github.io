@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Poppins, JetBrains_Mono } from "next/font/google";
+import { Fraunces, Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({
+const fraunces = Fraunces({
   subsets: ["latin"],
-  variable: "--font-heading",
-  weight: ["400", "500", "600", "700"],
+  variable: "--font-serif",
   display: "swap",
 });
 
-const poppins = Poppins({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  variable: "--font-body",
+  variable: "--font-sans",
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
@@ -24,17 +23,18 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Baibhav Kumar — Fullstack AI Engineer",
-  description: "Portfolio and Engineering Design Docs for Baibhav Kumar. Building high-scale multi-agent DAGs, hybrid vector engines, LLMOps telemetry gateways, and PySpark ETL feature pipelines.",
+  title: "Baibhav Kumar — Staff Fullstack AI Engineer & Systems Architect",
+  description: "Portfolio and Architectural Field Notes for Baibhav Kumar. Building high-scale multi-agent DAGs, hybrid vector engines, real-time Rust LLMOps gateways, and human-in-the-loop AI infrastructure.",
   keywords: [
-    "Fullstack AI Engineer",
-    "AI Systems Engineer",
+    "Staff Fullstack AI Engineer",
+    "GenAI Systems Architect",
     "LangGraph",
     "pgvector",
     "TypeScript",
     "Python",
+    "Rust",
     "PySpark",
-    "DuckDB",
+    "Human in the Loop AI",
     "System Architecture"
   ],
 };
@@ -45,8 +45,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${poppins.variable} ${jetbrainsMono.variable}`}>
-      <body className="antialiased bg-white text-[#1447e6] font-sans selection:bg-[#1447e6] selection:text-white">
+    <html lang="en" className={`${fraunces.variable} ${plusJakartaSans.variable} ${jetbrainsMono.variable}`}>
+      <body className="antialiased bg-[#FAF8F5] text-[#1C1917] font-sans selection:bg-[#D97706] selection:text-white min-h-screen">
         {children}
       </body>
     </html>

@@ -23,6 +23,30 @@ if (fs.existsSync(outNext)) {
   fs.cpSync(outNext, rootNext, { recursive: true });
 }
 
+// Copy all other static assets (e.g. PDFs, images) from out/ to root
+if (fs.existsSync(outDir)) {
+  const items = fs.readdirSync(outDir);
+  for (const item of items) {
+    if (item !== "_next" && item !== "index.html" && item !== "404.html" && !item.startsWith(".")) {
+      const srcItem = path.join(outDir, item);
+      const destItem = path.join(rootDir, item);
+      if (fs.statSync(srcItem).isFile()) {
+        fs.copyFileSync(srcItem, destItem);
+      }
+    }
+  }
+}
+
+// Create clean resume.pdf alias if PDF exists in public or out
+const publicDir = path.join(rootDir, "public");
+if (fs.existsSync(publicDir)) {
+  const pdfFiles = fs.readdirSync(publicDir).filter(f => f.endsWith(".pdf"));
+  if (pdfFiles.length > 0) {
+    const mainPdf = path.join(publicDir, pdfFiles[0]);
+    fs.copyFileSync(mainPdf, path.join(rootDir, "resume.pdf"));
+  }
+}
+
 // Remove docs directory if present
 if (fs.existsSync(docsDir)) {
   fs.rmSync(docsDir, { recursive: true, force: true });
